@@ -1,0 +1,348 @@
+.btn {
+  background-color: black;
+  padding: 5px 25px 5px 25px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: white;
+  border: solid 1px black;
+  padding: 5px 25px 5px 25px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: white;
+  border: solid 1px black;
+  padding: 5px 25px 5px 25px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+}
+
+button {
+  background-color: black;
+  padding: 5px 25px 5px 25px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px 0px 50px;
+}
+
+.footer {
+  position: fixed;
+  height: 50px;
+  bottom: 20px;
+  left: 50px;
+  right: 50px;
+  margin-bottom: 0px;
+}
+
+.social-links {
+  font-family: Font Awesome 5 Brands;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  color: #000000;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 26pt;
+}
+
+input:focus {
+  outline: none;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:60%;
+  transform:translateY(50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-60%);
+}
+
+#entry {
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 0 0;
+  font-size: 26pt;
+  width:100%;
+  --mask: linear-gradient(to left, 
+      rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 75%, 
+      rgba(0,0,0, 0) 95%, rgba(0,0,0, 0) 0
+  ) 100% 50% / 100% 100% repeat-x;
+  -webkit-mask: var(--mask); 
+  mask: var(--mask);
+}
+
+.fab {
+  color: #000000;
+  text-decoration: none;
+  transform: scale(60%);
+}
+
+.player-wrapper {
+  left: 0; 
+  width: 100%; 
+  height: 0; 
+  position: relative; 
+  padding-bottom: 56.25%;
+}
+
+.player {
+  border: 0; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  position: absolute;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 10px 0 0 0;
+}
+
+.end-stat {
+  text-align: center;
+}
+
+.end-stat {
+  text-align: center;
+  margin:0 0 10% 0;
+}
+
+/* For Firefox */
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+/* Webkit browsers like Safari and Chrome */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.detail-wrapper {
+  margin:5% 0 5% 0;
+  display:inline-block;
+  width:80%;
+  word-wrap:break-word;
+}
+
+#wrong {
+  color: red;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+  -webkit-transition: visibility 0s 1s, opacity 1s linear;
+  -moz-transition: visibility 0s 1s, opacity 1s linear;
+}
+
+
+#startingPoint {
+  padding: 5px 5px 5px 5px;
+  border-radius: 20px;
+  border: solid black 1.5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+ /* The switch - the box around the slider */
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 16px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #000000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 15px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+
+
+#head-start-entry {
+  opacity:.15;
+}
+
+#correct-entry {
+  color:black;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*background-color: rgb(0,0,0); /* Fallback color */
+  /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 20px;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} 
+
+/* pirecital styles */
+#picontent {
+  font-size:80pt;
+  align-content: center;
+  transform: translateX(-2.5%);
+}
+.recital-container {
+  transform: translateY(200%) translateX(8%);
+  width:85%;
+  font-family: monospace;
+
+}
+
+#middle {
+  color: black;
+}
+
+#before {
+  --mask: linear-gradient(to left, 
+    rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 10%, 
+    rgba(0,0,0, 0) 50%, rgba(0,0,0, 0) 0
+  ) 100% 50% / 100% 100% repeat-x;
+  -webkit-mask: var(--mask); 
+  mask: var(--mask);
+  opacity: 20%;
+}
+
+#after {
+  --mask: linear-gradient(to right, 
+    rgba(0,0,0, 1) 0,   rgba(0,0,0, 1) 10%, 
+    rgba(0,0,0, 0) 50%, rgba(0,0,0, 0) 0
+  ) 100% 50% / 100% 100% repeat-x;
+  -webkit-mask: var(--mask); 
+  mask: var(--mask);
+  opacity: 20%;
+}
+/*
+     FILE ARCHIVED ON 08:02:43 Jun 10, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:23:55 Aug 14, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.676
+  exclusion.robots: 0.023
+  exclusion.robots.policy: 0.01
+  esindex: 0.017
+  cdx.remote: 205.293
+  LoadShardBlock: 56.759 (3)
+  PetaboxLoader3.datanode: 91.683 (5)
+  load_resource: 228.991 (2)
+  PetaboxLoader3.resolve: 151.347 (2)
+*/
