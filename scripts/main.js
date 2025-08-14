@@ -77,6 +77,8 @@ function checkAnswer(e){
         // bring back typo number
         typoNum = 0;
         // remove prompt error flag
+        prompt_sel.textContent = "tap on the number to start typing";
+        prompt_sel.style.color = "black";
         prompt_sel.classList.add("hidden");
       }
 
