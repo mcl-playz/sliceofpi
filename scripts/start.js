@@ -21,35 +21,29 @@ let startingPoint;
 let mercy;
 
 // When user clicks start button, store the setting data and carry it to the quiz page
-startBtn_sel.addEventListener("click", setStart,{once:true});
+startBtn_sel.addEventListener("click", setStart, { once: true });
 
 // When the user clicks on the button, open the modal
-btn.addEventListener("click", function() {
-  modal.style.display = "block";
-  document.body.style.backgroundColor= "rgba(0,0,0,.4)";
-  startingPoint_sel.style.backgroundColor = "rgba(255,255,255,.4)";
+btn.addEventListener("click", function () {
+	modal.style.display = "block";
 })
 
 // When the user clicks on <span> (x), close the modal
-span.addEventListener("click", function(){
-  modal.style.display = "none";
-  document.body.style.backgroundColor = "white";
-  startingPoint_sel.style.backgroundColor = "rgba(255,255,255,1)";
+span.addEventListener("click", function () {
+	modal.style.display = "none";
 })
 
 // When the user clicks anywhere outside of the modal, close it
-document.body.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-    document.body.style.backgroundColor = "white";
-    startingPoint_sel.style.backgroundColor = "rgba(255,255,255,1)";
-  }
-} 
+document.body.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+}
 
-function setStart(e){
-  startingPoint = startingPoint_sel.value;
-  mercy = mercy_sel.checked;
-  sessionStorage.setItem('startingPoint', startingPoint);
-  sessionStorage.setItem('mercy', mercy);
-  window.location.replace("quiz.html");
+function setStart(e) {
+	startingPoint = startingPoint_sel.value;
+	mercy = mercy_sel.checked;
+	sessionStorage.setItem('startingPoint', startingPoint);
+	sessionStorage.setItem('mercy', mercy);
+	window.location.replace("quiz.html");
 }
